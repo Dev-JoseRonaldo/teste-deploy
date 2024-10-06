@@ -7,7 +7,6 @@ async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
   // Habilitar CORS para todos os hosts
-  app.use(cors());
 
   // Ou, se preferir, use enableCors com configurações específicas
   app.enableCors({
